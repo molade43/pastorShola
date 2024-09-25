@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section className="testimonial container section" id="qualification">
+    <section className="testimonial container section" id="contact">
       <h2 className="section__title">Get in Touch</h2>
       <span className="section__subtitle">Contact Me</span>
 
@@ -16,7 +16,9 @@ const Contact = () => {
               <i className="bx bxl-mail-send contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">testing123@gmail.com</span>
+              <span className="contact__card-data">
+                sholaobikanye@gmail.com
+              </span>
 
               <a href="mailto:testing123@gmail.com" className="contact__button">
                 Write me{" "}
@@ -42,8 +44,8 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-messenger contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Tester App</h3>
-              <span className="contact__card-data">user-687</span>
+              <h3 className="contact__card-title">Messenger</h3>
+              <span className="contact__card-data">Mark Shola</span>
 
               <a href="https://m.me/crptyiclade" className="contact__button">
                 Write me{" "}

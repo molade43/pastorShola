@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Data = () => {
+  const [roles, setRoles] = useState([
+    "Super Man",
+    "Father",
+    "Husband",
+    "Pastor",
+    "Giver",
+  ]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === roles.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [roles]);
   return (
     <div className="home__data">
       <h1 className="home__title">Olushola Mark Obikanye</h1>
@@ -53,10 +70,10 @@ const Data = () => {
           fill="#EBA352"
         ></path>
       </svg>
-      <h3 className="home__subtitle">Super Man</h3>
+      <h3 className="home__subtitle">{roles[currentIndex]}</h3>
       <p className="home__description">
-        He is a Father, Husband, Pastor, Giver and a passionate and dedicated to
-        his work and family
+        He is a seasoned international Speaker, Minister, Prophet to the Nations
+        and an extraordinary man of many parts.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello

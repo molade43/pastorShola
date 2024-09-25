@@ -1,5 +1,5 @@
 import React from "react";
-import "./scrollup.css";
+import "./scrollUp.css";
 
 const ScrollUp = () => {
   window.addEventListener("scroll", function () {

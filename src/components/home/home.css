@@ -40,6 +40,7 @@
   padding-left: 5.4rem;
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
+  animation: typewriter 5s infinite;
 }
 
 .home__subtitle::before {
@@ -52,13 +53,28 @@
   top: 1rem;
 }
 
+@keyframes typewriter {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .home_description {
   max-width: 400px;
   margin-bottom: var(--mb-3);
 }
 
 .home__img {
-  background: url(../../assets//profile.jpg);
+  background: url(../../assets/shola/pastorShola-Yellow\ background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
